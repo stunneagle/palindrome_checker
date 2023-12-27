@@ -1,23 +1,26 @@
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import PalindromeChecker from './components/palindrome'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="text-center">
+      <div className={styles.container}>
+      <div> 
+        <img src={logo} className={styles["App-logo"]} alt="logo" />
+        <h1 className={styles['text-center']}>Is it a Palindrome?</h1>
+      </div>
+
+     <PalindromeChecker />
+      
+      <div className={styles.description}>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        A <em>palindrome</em> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+       
+      </div>
+       
     </div>
   );
 }

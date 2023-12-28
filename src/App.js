@@ -15,11 +15,13 @@ function App() {
       
       <div className={styles.description}>
         <p>
-        A <em>palindrome</em> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+          <i className='fa fa-lightbulb'></i> 
+         A <em>palindrome</em> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
         </p>
       </div>
        
       </div>
+      <span className={styles["copyright"]}>&copy;2024 stunneagle &middot; Nottingham</span>
        
     </div>
   );

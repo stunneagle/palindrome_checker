@@ -48,7 +48,25 @@ input{
   font-weight: bold;
 }
 
+i{
+  color: yellow;
+}
+
 .text-center{
   text-align: center;
   
+}
+.copyright{
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 500px){
+    .container{
+      width: 95%;
+    }
 }
